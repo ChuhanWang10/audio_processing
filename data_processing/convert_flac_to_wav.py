@@ -39,6 +39,6 @@ if __name__ == '__main__':
     # output_wav = "/home/chuwan/experiments/audio_processing/output_file.wav"
     #convert_flac_to_wav(input_flac, output_wav)
 
-    input_dir = "/opt/share/common/db/audio_corpora/LibriSpeech/test_clean_100/test-clean"
-    output_dir = "/opt/share/common/db/audio_corpora/LibriSpeech_wavs/test-clean"
+    input_dir = "/mnt/lore/research/data/audio_corpora/Librispeech/flac"
+    output_dir = "/mnt/lore/research/data/audio_corpora/Librispeech/wav"
     batch_conversion(input_dir, output_dir)

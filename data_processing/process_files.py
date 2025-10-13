@@ -71,14 +71,14 @@ def count_files(dirpath):
     return len(list_files(dirpath))
 
 def compare_folders(folder1, folder2, target_folder):
-    
+    """Compare two folders and return the files that are only in the target folder."""
+
     files = []
     for dirpath, dirnames, filenames in os.walk(target_folder):
-        if dirpath != target_folder:
-            # Find only the lowest-level subfolders
-            if not dirnames:
-                for filename in filenames:
-                    files.append(filename)
+        # Find only the lowest-level subfolders
+        if not dirnames:
+            for filename in filenames:
+                files.append(filename)
 
     # Check if there are files in the folder
     if files:
